@@ -1,0 +1,10 @@
+timeHours = float(input("Enter hour: "))
+timeMinutes = float(input("Enter Minute: "))
+timeHoursElapsed = float(input("Enter Hours elapsed: "))
+timeminutesElapsed = float (input("Enter minutes elapsed: "))
+
+
+timeHour = round (timeHours+timeHoursElapsed) % 59
+timebyMinute = round (timeMinutes+timeminutesElapsed) % 360
+
+print ("Current Time:",timeHour%59,":",timebyMinute%60)
